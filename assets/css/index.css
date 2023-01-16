@@ -32,9 +32,8 @@ h1, h2 {
     letter-spacing: 4px;
 }
 
-.menu-line {
-    display: inline;
-}
+/* By floating the menu itself instead of the list item we dont have to re arrange the html code to fix the order */
+/* Adding inline display to both the menu and the list item we can make the be in line. */
 
 #menu ul {
     float: right;
@@ -44,4 +43,21 @@ h1, h2 {
     list-style-type: none;
     margin-right: 30px;
     display: inline;
+}
+
+#menu a {
+    text-decoration: none; /* Removes default link styling */
+    color: inherit;
+}
+
+#menu, #logo { /* Selects multiple id's to be styled together */
+    line-height: 75px; /* Centers both of the elements on the same line height. */
+}
+
+#menu a:hover { /*Underlines the menu item when a user hovers over with the mouse */
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active { /* Shows the active page by adding an underline to the nav item */
+    border-bottom: 1px solid #3a3a3a;
 }
