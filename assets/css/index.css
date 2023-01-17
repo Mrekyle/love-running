@@ -239,3 +239,17 @@ footer {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/* Gallery Page Styling */
+
+#photos {
+    clear: both; /* Makes the images display below the header*/
+    line-height: 0;
+    column-count: 4; /* Sets how many colunms there is on the page*/
+    column-gap: 0; /* Removes the gaps between the colunms */
+}
+
+/* Below selects the child of the id which is the img element */
+#photos > img { /* Sets the width of the images on the page*/
+    width: 100%;
+}
