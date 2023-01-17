@@ -146,7 +146,6 @@ h1, h2 {
 #center-about {
     width: 33%;
     margin: 0 auto; /* Centers the entire Div */
-    background-color: green;
 }
 
 hr {
@@ -175,4 +174,21 @@ hr {
 }
 .right-about-heading p {
     text-align: right;
+}
+
+#circle-container { /* This creates the circle border with the parent child div. */
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#circle-cover-bg {
+    background: url(../images/ethos-center-image.jpg) no-repeat center center;
+    height: 100%;
+    border-radius: inherit; /* Inherit works as it is a child of the parent border radius. Otherwise setting the radius to get the circle is required */
 }
