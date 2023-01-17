@@ -23,6 +23,7 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 }
 
 /* Navigation */
@@ -116,4 +117,30 @@ h1, h2 {
     right: 150px;
 
     position: absolute; /* Fixes the text in place on the page to its parent, see hero-outer*/
+}
+
+/* Club Ethos Section */
+
+#club-ethos {
+    height: 600px;
+}
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+    background-color: aqua;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    background-color: orange;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto; /* Centers the entire Div */
+    background-color: green;
 }
