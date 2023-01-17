@@ -61,3 +61,35 @@ h1, h2 {
 .active { /* Shows the active page by adding an underline to the nav item */
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* Hero Image */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden; /* Masks the overflowing image from the container when the animation is called. 
+    which results in the animation.*/
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%; /* Ensures the image is the entire screen width no matter the device size */
+    background: url(../images/hero-image.webp) no-repeat center center; /* Imports an image without using html, apart from the id*/
+
+    /* animates the zoom animation - Inside the hero image property*/
+
+    animation: hero-zoom; /* Calls what animation to be used */
+    animation-duration: 5s; /* Takes 5 seconds for the animation */
+    animation-fill-mode: forwards; /* Finishes the animation at the set height and width */
+}
+
+/* Sets the background image animation */
+
+@keyframes hero-zoom {
+    from{ /* Initial state */
+        transform: scale(1);
+    }
+    to{ /* End state */
+        transform: scale(1.1);
+    }
+}
