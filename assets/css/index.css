@@ -80,7 +80,7 @@ h1, h2 {
 #hero-image {
     height: 600px;
     width: 100%; /* Ensures the image is the entire screen width no matter the device size */
-    background: url(../images/hero-image.webp) no-repeat center center; /* Imports an image without using html, apart from the id*/
+    background: url('../images/hero-image.webp') no-repeat center center; /* Imports an image without using html, apart from the id*/
 
     /* animates the zoom animation - Inside the hero image property*/
 
@@ -188,7 +188,17 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url(../images/ethos-center-image.jpg) no-repeat center center;
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
     border-radius: inherit; /* Inherit works as it is a child of the parent border radius. Otherwise setting the radius to get the circle is required */
+}
+
+/** Meetup Times and Locations **/
+
+#times {
+    background: url('../images/dublin-city.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
 }
