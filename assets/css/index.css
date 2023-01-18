@@ -289,3 +289,16 @@ footer {
 }
 
 /* The css between the curly brakets will apply at smaller screen sizes. */
+
+/* For medium screen size - 700px or less - IE smart phone devices */
+
+@media  screen and (max-width: 700px) {
+    
+    #menu { /* Changes the position of the nav menu, based on the max width property set. */
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+}
