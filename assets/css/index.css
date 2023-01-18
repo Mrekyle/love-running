@@ -286,6 +286,13 @@ footer {
     hr {
         display: none;
     }
+
+    #times > div { /* Stacks the times cards ontop of each other based on the 1200px rule. Includes the 700px rule too because of the way css works */
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
 }
 
 /* The css between the curly brakets will apply at smaller screen sizes. */
