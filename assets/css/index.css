@@ -301,4 +301,30 @@ footer {
         margin-bottom: 20px;
         line-height: 25px;
     }
+
+    #cover-text { 
+        left: 0; /* Aligns the text to the left of the screen based on the 700px property */
+    }
+
+    #club-ethos { /* Centers the content in the section */
+        width: 90%; /* Gives 5% padding each side */
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading { /* Aligns the headings to either side of the section to stay inline with the base design by inheriting the width from the parent. */
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2 { /* Selects the h2 headings for both divs */
+        width: 100%; /* Centers the headings of the section */
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        width: inherit;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
