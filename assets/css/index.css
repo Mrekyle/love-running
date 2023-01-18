@@ -334,4 +334,15 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    #photos {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    #photos {
+        column-count: 2;
+    }
 }
